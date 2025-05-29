@@ -18,6 +18,32 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+  .card {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
+  .logo {
+    height: 2.5em;
+    padding: 0.5em;
+  }
+  .card {
+    padding: 0.5em;
+  }
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

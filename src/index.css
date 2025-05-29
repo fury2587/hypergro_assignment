@@ -98,4 +98,15 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  input, textarea, select, button {
+    @apply w-full max-w-full;
+    box-sizing: border-box;
+  }
 }

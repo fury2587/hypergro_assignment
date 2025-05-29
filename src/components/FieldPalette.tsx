@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useDraggable } from '@dnd-kit/core';
 import { useFormStore } from '../store/formStore';
@@ -67,20 +66,20 @@ export const FieldPalette: React.FC = () => {
 
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-      <div className="p-4 border-b border-gray-200">
+      <div className="p-4 sm:p-6 border-b border-gray-200">
         <h2 className="text-lg font-semibold text-gray-900">Field Types</h2>
         <p className="text-sm text-gray-600 mt-1">
           Drag fields to the form or click to add
         </p>
       </div>
       
-      <div className="p-4 space-y-3">
+      <div className="p-4 sm:p-6 space-y-3">
         {FIELD_TEMPLATES.map((template) => (
           <DraggableField key={template.type} template={template} />
         ))}
       </div>
       
-      <div className="p-4 border-t border-gray-200">
+      <div className="p-4 sm:p-6 border-t border-gray-200">
         <h3 className="text-sm font-medium text-gray-900 mb-2">Quick Actions</h3>
         <div className="space-y-2">
           <button 
